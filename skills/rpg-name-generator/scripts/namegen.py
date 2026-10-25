@@ -172,6 +172,9 @@ def main():
         else:
             base = faker_names(locales, 300 if a.blend else a.n * 3, part)
             pool = markov(base, a.n * 3) if a.blend else base
+        # Drop clichés from each half before pairing, so a good first name isn't
+        # thrown away for the surname it happened to be paired with.
+        pool = [nm for nm in pool if nm.lower() not in CLICHES]
         random.shuffle(pool)
         return pool
 
@@ -196,7 +199,8 @@ def main():
     if len(keep) < a.n:
         print(f"namegen: only {len(keep)} names survived the filters; widen the source or rerun",
               file=sys.stderr)
-    print("\n".join(keep))
+    if keep:
+        print("\n".join(keep))
 
 if __name__ == "__main__":
     main()
