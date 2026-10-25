@@ -33,7 +33,7 @@ Then tell them to upload it under Settings → Capabilities → Skills.
 
 ## 2. Check the script runs
 
-The script needs Python 3.9+ and, for most uses, the `faker` package. Find the installed `scripts/namegen.py` (in the plugin cache, or the skills directory you copied into).
+The script needs Python 3.10+ and, for most uses, the `faker` package. Find the installed `scripts/namegen.py` (in the plugin cache, or the skills directory you copied into).
 
 - If `uv` is installed, nothing else is needed: `uv run <skill dir>/scripts/namegen.py --n 3` installs `faker` on first run.
 - Otherwise run `python3 -m pip install --user faker==40.40.0` (or install it into a virtual environment; never use `--break-system-packages`), then `python3 <skill dir>/scripts/namegen.py --n 3`.

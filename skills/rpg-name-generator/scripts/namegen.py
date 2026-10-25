@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # /// script
-# requires-python = ">=3.9"
+# requires-python = ">=3.10"
 # dependencies = ["faker==40.40.0"]
 # ///
 """namegen.py: raw name candidates from real-world name data, to reshape by hand afterward.
