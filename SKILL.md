@@ -53,7 +53,7 @@ Decide the culture, era or feel first, then the source. `--blend` runs a charact
 
 ## Run the generator
 
-The script is `scripts/namegen.py` in this skill's folder. It needs `faker` (`pip install faker`, adding `--break-system-packages` where pip requires it); seed-file runs without `--compound` don't.
+The script is `scripts/namegen.py` in this skill's folder. With `uv` installed, `uv run scripts/namegen.py ...` fetches its one dependency, `faker`, itself. Otherwise `pip install faker` (adding `--break-system-packages` where pip requires it); seed-file runs without `--compound` don't need it.
 
 ```
 python3 scripts/namegen.py --locales en_GB,de_DE,nl_NL --part full --n 15 --avoid cast.txt

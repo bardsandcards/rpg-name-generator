@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.9"
+# dependencies = ["faker"]
+# ///
 """namegen.py: raw name candidates from real-world name data, to reshape by hand afterward.
 
 Examples:
@@ -10,7 +14,8 @@ Examples:
   add --avoid cast.txt to drop anything that sounds like a name already in the campaign
   namegen.py --avoid cast.txt --check "Ostra Vell" "Hollis"   # test names you reshaped by hand
 
-Needs: pip install faker   (not needed for --seed-file without --compound)
+Needs: pip install faker   (not needed for --seed-file without --compound),
+       or run it with uv run scripts/namegen.py, which installs faker itself
 Locales: Latin-script Faker locales work directly (en_GB, de_DE, nl_NL, fr_FR, it_IT, es_ES,
 pt_PT, pl_PL, cs_CZ, sv_SE, no_NO, fi_FI, ...); ja_JP and zh_CN work through Faker's romanized
 names. Some locales (e.g. ar_EG) quietly return English names; check the output. For cultures and
@@ -55,9 +60,16 @@ def faker_names(locales, n, part):
     fakes = []
     for loc in locales:
         try:
-            fakes.append(Faker(loc))
+            f = Faker(loc)
         except AttributeError:
             print(f"namegen: unknown locale {loc}, skipped", file=sys.stderr)
+            continue
+        kind = "address" if part == "place" else "person"
+        source = next(type(pr).__module__ for pr in f.providers if f".{kind}." in type(pr).__module__)
+        if not source.endswith(loc):
+            print(f"namegen: Faker has no {kind} data for {loc}; it falls back to "
+                  f"{source.rsplit('.', 1)[1]}. Use --seed-file for this culture.", file=sys.stderr)
+        fakes.append(f)
     if not fakes:
         sys.exit("namegen: no usable locales")
     out, tries = set(), 0
