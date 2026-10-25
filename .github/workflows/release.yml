@@ -11,7 +11,7 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: git archive --format=zip --prefix=rpg-name-generator/ -o rpg-name-generator.skill HEAD:skills/rpg-name-generator
       - run: gh release upload "$TAG" rpg-name-generator.skill
         env:
