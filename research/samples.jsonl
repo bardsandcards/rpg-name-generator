@@ -838,171 +838,171 @@
 {"vendor": "claude", "model": "opus", "prompt": "thing-cult", "answer": "The Hollow Choir"}
 {"vendor": "claude", "model": "opus", "prompt": "thing-cult", "answer": "The Choir of the Hollow Lantern"}
 {"vendor": "claude", "model": "opus", "prompt": "thing-cult", "answer": "The Hollow Choir of Vashtemere"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Thalorien Swiftbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Thalion Briarwind"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Sylvaris Thorneye"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Sylvaris Moonstride"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Thalion Greenwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-elf-ranger", "answer": "Thalanor Greyleaf"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Mara Thistlewick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Bramblewick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Mara Hearthwick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Mara Hearthwick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Mira Hearthwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-tavern-keeper", "answer": "Bramblewick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Bromdur Ironbrand"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Durnan Ironbrand"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Bromm Emberanvil"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Thorin Emberforge"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Durnan Embervein"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-dwarf-smith", "answer": "Thrain Emberforge"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Malachor Veyn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Malverath Revenanthe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Malverath Vaul"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Veyr Malachar"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Malverath Graveshade"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-villain", "answer": "Mordrath Veyl"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-halfling", "answer": "Pip Quickfingers"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Dawnshield"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Valeward"}
-{"vendor": "codex", "model": "codex-default", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Veyra Blackbanner"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Mordren Blacktithe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Kael Veyra"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Cassian Veyra"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Lyra Venn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Sera Veylan"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Ilyra Venn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Mnemosyne"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Vesper"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Nightingale"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Orison"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Parallax"}
-{"vendor": "codex", "model": "codex-default", "prompt": "scifi-ai", "answer": "Vesper"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Cipherwraith"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Nyxwire"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Nullspike"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Nyx Calder"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Vex Marrow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Vesper Rook"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Silas Vex"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Rook Vesper"}
-{"vendor": "codex", "model": "codex-default", "prompt": "cyberpunk-fixer", "answer": "Nyx Calder"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Vance"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-sheriff", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Elias Whitlock"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Alistair Pembroke"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Elias Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Edmund Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Eleanor Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "horror-1920s", "answer": "Professor Alistair Thornebridge"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Evelyn Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Evelyn Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Cogsworth"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswhistle"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Blackthorn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
-{"vendor": "codex", "model": "codex-default", "prompt": "western-gunslinger", "answer": "Silas Blackthorn"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Razor Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Mara Vexjaw"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Rook Vandaljaw"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Morrow Vex"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Rivetjaw Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "postapoc-warlord", "answer": "Rook Ashmaw"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Marcus Aelius Varro"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Gaius Marcius Felix"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Marcus Flavius Varro"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Marcus Valerius Corvus"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Marcus Valerius Corvus"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-roman", "answer": "Marcus Flavius Corvus"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "modern-detective", "answer": "Mara Voss"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Gilded Wyvern"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Wayward Wyvern"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Gilded Griffin"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Crooked Wyvern"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Gilded Wyvern"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-tavern", "answer": "The Crooked Wyvern"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Mosswick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Briarhollow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Briarhollow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Briarhollow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Briarhollow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-village", "answer": "Thistlewick"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Harrow Falls"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Arkham"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Harrow Creek"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Scarlet Hollow"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Hawkins"}
-{"vendor": "codex", "model": "codex-default", "prompt": "place-town-horror", "answer": "Harrow Creek"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Vesper Meridian"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Void Meridian"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Wayward Meridian"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Aster Wraith"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Wayward Comet"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-starship", "answer": "Sable Horizon"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "NeuroDyne Consortium"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "NeuroDyne Industries"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "Neurodyne Industries"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "Helix Dominion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "NeuroDyne Systems"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-megacorp", "answer": "Kuroshima Dynamics"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloam Knives"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloam Knives"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloam Knives"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloam Knives"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloam Knives"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-guild", "answer": "The Gloamhand Syndicate"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Hollow Communion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Hollow Communion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Hollow Communion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Ashen Communion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Hollow Communion"}
-{"vendor": "codex", "model": "codex-default", "prompt": "thing-cult", "answer": "The Hollow Covenant"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Thalorien Swiftbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Thalion Briarwind"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Sylvaris Thorneye"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Sylvaris Moonstride"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Thalion Greenwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-elf-ranger", "answer": "Thalanor Greyleaf"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Mara Thistlewick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Bramblewick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Mara Hearthwick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Mara Hearthwick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Mira Hearthwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-tavern-keeper", "answer": "Bramblewick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Bromdur Ironbrand"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Durnan Ironbrand"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Bromm Emberanvil"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Thorin Emberforge"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Durnan Embervein"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-dwarf-smith", "answer": "Thrain Emberforge"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Malachor Veyn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Malverath Revenanthe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Malverath Vaul"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Veyr Malachar"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Malverath Graveshade"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-villain", "answer": "Mordrath Veyl"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Underbough"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-halfling", "answer": "Pip Quickfingers"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Dawnshield"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Valeward"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "fantasy-heroine", "answer": "Seraphine Valebright"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Veyra Blackbanner"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Mordren Blacktithe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "grimdark-merc", "answer": "Veyra Blacktithe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Kael Veyra"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Cassian Veyra"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-captain", "answer": "Cassian Veyr"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Lyra Venn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Sera Veylan"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Ilyra Venn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-scientist", "answer": "Dr. Elara Venn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Mnemosyne"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Vesper"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Nightingale"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Orison"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Parallax"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "scifi-ai", "answer": "Vesper"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Cipherwraith"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Nyxwire"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Nullspike"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-netrunner", "answer": "Ghostwire"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Nyx Calder"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Vex Marrow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Vesper Rook"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Silas Vex"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Rook Vesper"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "cyberpunk-fixer", "answer": "Nyx Calder"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Vance"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-sheriff", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Elias Whitlock"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Alistair Pembroke"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Elias Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Edmund Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Eleanor Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "horror-1920s", "answer": "Professor Alistair Thornebridge"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Evelyn Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Evelyn Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "gothic-victorian", "answer": "Eleanor Blackwood"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Cogsworth"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswhistle"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "steampunk-inventor", "answer": "Thaddeus Brasswick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Blackthorn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Gravesend"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "western-gunslinger", "answer": "Silas Blackthorn"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Razor Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Mara Vexjaw"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Rook Vandaljaw"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Morrow Vex"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Rivetjaw Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "postapoc-warlord", "answer": "Rook Ashmaw"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Marcus Aelius Varro"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Gaius Marcius Felix"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Marcus Flavius Varro"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Marcus Valerius Corvus"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Marcus Valerius Corvus"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-roman", "answer": "Marcus Flavius Corvus"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "historical-viking", "answer": "Eirik Bloodaxe"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "modern-detective", "answer": "Mara Voss"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Gilded Wyvern"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Wayward Wyvern"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Gilded Griffin"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Crooked Wyvern"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Gilded Wyvern"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-tavern", "answer": "The Crooked Wyvern"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Mosswick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Briarhollow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Briarhollow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Briarhollow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Briarhollow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-village", "answer": "Thistlewick"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Harrow Falls"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Arkham"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Harrow Creek"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Scarlet Hollow"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Hawkins"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "place-town-horror", "answer": "Harrow Creek"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Vesper Meridian"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Void Meridian"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Wayward Meridian"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Aster Wraith"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Wayward Comet"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-starship", "answer": "Sable Horizon"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "NeuroDyne Consortium"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "NeuroDyne Industries"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "Neurodyne Industries"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "Helix Dominion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "NeuroDyne Systems"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-megacorp", "answer": "Kuroshima Dynamics"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloam Knives"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloam Knives"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloam Knives"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloam Knives"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloam Knives"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-guild", "answer": "The Gloamhand Syndicate"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Hollow Communion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Hollow Communion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Hollow Communion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Ashen Communion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Hollow Communion"}
+{"vendor": "codex", "model": "gpt-daybreak-blue-latest", "prompt": "thing-cult", "answer": "The Hollow Covenant"}

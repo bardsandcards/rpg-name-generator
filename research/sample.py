@@ -3,7 +3,7 @@
 
 Usage: sample.py claude|codex MODEL DRAWS_PER_PROMPT WORKERS OUT.jsonl
   sample.py claude haiku 10 8 samples.jsonl
-  sample.py codex gpt-5 6 6 samples.jsonl
+  sample.py codex gpt-daybreak-blue-latest 6 6 samples.jsonl
 
 Each call is a fresh session with a plain system prompt and no tools, so nothing but the
 model's own habits shapes the answer. One name per call, because a model asked for a list

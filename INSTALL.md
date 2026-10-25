@@ -17,7 +17,13 @@ For any other harness, use its documented skills directory. If it has none, tell
 
 If a `rpg-name-generator` skill is already installed there, ask before replacing it.
 
-**Claude apps (claude.ai, Claude Desktop):** you can't install it for them. Tell the person to download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) and upload it under Settings → Capabilities → Skills.
+**Claude apps (claude.ai, Claude Desktop):** you can't install it for them, but you can hand them the file. Point them at `rpg-name-generator.skill` on the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest), or build it from a clone:
+
+```
+git -C <clone dir> archive --format=zip --prefix=rpg-name-generator/ -o rpg-name-generator.skill HEAD SKILL.md LICENSE scripts
+```
+
+Then tell them to upload it under Settings → Capabilities → Skills.
 
 ## 2. Check the script runs
 
