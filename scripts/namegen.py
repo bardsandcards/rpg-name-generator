@@ -5,27 +5,50 @@ Examples:
   namegen.py --locales en_GB,de_DE,nl_NL --part full --n 15   # real names from those places
   namegen.py --locales cs_CZ,de_DE --blend --n 15             # new names in that sound (Markov blend)
   namegen.py --seed-file seeds.txt --blend --n 15             # new names in the sound of your own list
+  namegen.py --locales de_DE,cs_CZ --part place --blend       # town and village names
   namegen.py --compound --n 10                                # whimsical compound surnames (Copperbottom)
-  add --avoid existing.txt to drop anything sharing its first three letters with an existing name
+  add --avoid cast.txt to drop anything that sounds like a name already in the campaign
+  namegen.py --avoid cast.txt --check "Ostra Vell" "Hollis"   # test names you reshaped by hand
 
 Needs: pip install faker   (not needed for --seed-file without --compound)
 Locales: Latin-script Faker locales work directly (en_GB, de_DE, nl_NL, fr_FR, it_IT, es_ES,
-pt_PT, pl_PL, cs_CZ, sv_SE, no_NO, fi_FI, ...); ja_JP works through Faker's romanized names.
-Some locales (e.g. ar_EG) quietly return English names; check the output. For cultures Faker
-doesn't cover in Latin script, find a real name list and use --seed-file.
+pt_PT, pl_PL, cs_CZ, sv_SE, no_NO, fi_FI, ...); ja_JP and zh_CN work through Faker's romanized
+names. Some locales (e.g. ar_EG) quietly return English names; check the output. For cultures and
+eras Faker doesn't cover, find a real name list and use --seed-file.
+
+Seed and avoid files hold one name per line. In a seed file, a line's first word feeds first
+names and its last word feeds surnames, so a list of full names works for --part full.
 """
-import argparse, random, re, sys
+import argparse, difflib, random, sys, unicodedata
 from collections import defaultdict
 
-# Names language models reach for again and again. Never offer these.
+# Names language models reach for again and again, first names and surnames alike.
+# Any word of a candidate matching one of these drops it.
 CLICHES = {
     "elara", "lyra", "kael", "kaelen", "thorne", "seraphina", "aldric", "mira", "vex", "brennan",
     "garrick", "elowen", "aria", "aurora", "finn", "rowan", "sable", "caspian", "cedric", "theron",
     "zephyr", "nyx", "ash", "ember", "silas", "eldrin", "lirael", "kira", "talia", "darian", "jarek",
     "grimm", "grimble", "thistle", "bramble", "corvin", "alaric", "varis", "elric", "lysander",
     "aelar", "thalia", "liora", "kestrel", "wren", "ravenna", "draven", "valen", "selene",
+    "voss", "vance", "pruitt",
 }
-LATIN = re.compile(r"[A-Za-zÀ-ÿĀ-žŁłŚśŹźŻżĆćŃńÓóĘęĄą']{3,12}")
+# Words that carry no sound of their own; ignored when comparing names.
+STOPWORDS = {"the", "and", "of", "sir", "lady", "lord", "dame", "von", "van", "der", "den", "del",
+             "de", "la", "le", "dr", "captain", "mr", "mrs", "miss"}
+
+def is_latin(word):
+    return 3 <= len(word) <= 12 and all(
+        c.isalpha() and unicodedata.name(c, "").startswith("LATIN") for c in word)
+
+def words(name):
+    return [w for w in name.lower().replace("-", " ").split() if len(w) >= 3 and w not in STOPWORDS]
+
+def too_similar(a, b):
+    """True if word a would be easy to confuse with word b at the table."""
+    return a[:3] == b[:3] or difflib.SequenceMatcher(None, a, b).ratio() >= 0.75
+
+def clashes(name, others):
+    return any(too_similar(a, b) for a in words(name) for b in others)
 
 def faker_names(locales, n, part):
     from faker import Faker
@@ -41,13 +64,15 @@ def faker_names(locales, n, part):
     while len(out) < n and tries < n * 50:
         tries += 1
         f = random.choice(fakes)
-        romanized = getattr(f, f"{'first' if part == 'first' else 'last'}_romanized_name", None)
-        try:
-            raw = romanized() if romanized else (f.first_name() if part == "first" else f.last_name())
-        except AttributeError:
-            raw = f.first_name() if part == "first" else f.last_name()
-        name = raw.split()[0].split("-")[0]
-        if LATIN.fullmatch(name):
+        if part == "place":
+            raw = f.city_name() if hasattr(f, "city_name") else f.city()
+        else:
+            kind = "first" if part == "first" else "last"
+            romanized = getattr(f, f"{kind}_romanized_name", None)
+            raw = romanized() if romanized else getattr(f, f"{kind}_name")()
+        tokens = raw.replace("-", " ").split()
+        name = max(tokens, key=len) if part == "place" else tokens[0]
+        if is_latin(name):
             out.add(name.capitalize() if name.isupper() else name)
     if len(out) < n // 3:
         print(f"namegen: only {len(out)} usable {part} names from {','.join(locales)}; "
@@ -82,6 +107,14 @@ def markov(seeds, n, order=2):
             out.add(w.capitalize())
     return list(out)
 
+def read_seeds(path, part):
+    with open(path) as fh:
+        lines = [l.split() for l in fh if l.strip()]
+    firsts = [l[0] for l in lines]
+    lasts = [l[-1] for l in lines if len(l) > 1]
+    pool = lasts if part == "last" and lasts else firsts
+    return list(dict.fromkeys(pool))
+
 COMPOUND_A = ("tumble hook pocket lock rattle thimble button ditch mud kettle whistle burr fiddle "
               "copper lark nettle pipe ladle").split()
 COMPOUND_B = "foot finger toe sleeve wick bottom nose knee spinner snatch trot tip hand skip".split()
@@ -89,40 +122,59 @@ COMPOUND_B = "foot finger toe sleeve wick bottom nose knee spinner snatch trot t
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--locales", default="en_GB", help="comma-separated Faker locales")
-    p.add_argument("--part", choices=["first", "last", "full"], default="first")
+    p.add_argument("--part", choices=["first", "last", "full", "place"], default="first")
     p.add_argument("--blend", action="store_true", help="invent new names in the sound of the source")
     p.add_argument("--seed-file", help="one real name per line; replaces --locales as the source")
     p.add_argument("--compound", "--kender", action="store_true", help="compound surnames (Copperbottom)")
-    p.add_argument("--avoid", help="file of existing names; drops candidates sharing the first 3 letters")
+    p.add_argument("--avoid", help="file of names already in the campaign; drops anything that sounds like them")
+    p.add_argument("--check", nargs="+", metavar="NAME",
+                   help="instead of generating, report whether these names clash with --avoid or the clichés")
     p.add_argument("--n", type=int, default=15)
     a = p.parse_args()
     locales = a.locales.split(",")
-    avoid = set()
+    avoid = []
     if a.avoid:
         with open(a.avoid) as fh:
-            avoid = {l.strip().lower()[:3] for l in fh if l.strip()}
+            avoid = [w for l in fh for w in words(l)]
+    if a.check:
+        for nm in a.check:
+            hits = [w for w in words(nm) if w in CLICHES]
+            hits += [f"{w}~{b}" for w in words(nm) for b in avoid if too_similar(w, b)]
+            print(f"{nm}: {'clashes with ' + ', '.join(hits) if hits else 'ok'}")
+        return
 
     def gen(part):
         if a.seed_file:
-            with open(a.seed_file) as fh:
-                seeds = [l.strip() for l in fh if l.strip()]
-            return markov(seeds, a.n * 3) if a.blend else seeds
-        base = faker_names(locales, 300 if a.blend else a.n * 3, part)
-        return markov(base, a.n * 3) if a.blend else base
+            seeds = read_seeds(a.seed_file, part)
+            pool = markov(seeds, a.n * 3) if a.blend else seeds
+        else:
+            base = faker_names(locales, 300 if a.blend else a.n * 3, part)
+            pool = markov(base, a.n * 3) if a.blend else base
+        random.shuffle(pool)
+        return pool
 
     if a.compound:
-        firsts = gen("first")
-        random.shuffle(firsts)
         names = [f"{first} {random.choice(COMPOUND_A).capitalize()}{random.choice(COMPOUND_B)}"
-                 for first in firsts[:a.n * 2]]
+                 for first in gen("first")[:a.n * 2]]
     elif a.part == "full":
-        names = [f"{x} {y}" for x, y in zip(gen("first"), gen("last"))]
+        names = [f"{x} {y}" for x, y in zip(gen("first"), gen("last")) if x != y]
     else:
         names = gen(a.part)
-    keep = [nm for nm in dict.fromkeys(names)
-            if nm.lower().split()[0] not in CLICHES and nm.lower()[:3] not in avoid]
-    random.shuffle(keep)
-    print("\n".join(keep[:a.n]))
+
+    # Keep names that avoid the clichés, the existing cast and each other, so a batch
+    # of new NPCs doesn't hand the table two names that start the same way.
+    keep, taken = [], list(avoid)
+    for nm in dict.fromkeys(names):
+        if any(w in CLICHES for w in words(nm)) or clashes(nm, taken):
+            continue
+        keep.append(nm)
+        taken += words(nm)
+        if len(keep) == a.n:
+            break
+    if len(keep) < a.n:
+        print(f"namegen: only {len(keep)} names survived the filters; widen the source or rerun",
+              file=sys.stderr)
+    print("\n".join(keep))
 
 if __name__ == "__main__":
     main()
