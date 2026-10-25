@@ -32,6 +32,9 @@
       "What's the name of the gate guard my players just asked about?",
       "Name the four NPCs in this river town, avoiding my campaign's existing cast.",
       "Name a cult for my 1920s Call of Cthulhu game."
-    ]
+    ],
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.png",
+    "brandColor": "#001830"
   }
 }

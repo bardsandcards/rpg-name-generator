@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+  <title id="t">RPG Name Generator</title>
+  <!-- Bards & Cards palette: ink #001830, gold #d89060, highlight gold #f0d890,
+       copper #c09060, deep brass #604020, mint #d8dedc, mint-700 #8a9a96 -->
+  <rect width="256" height="256" rx="56" fill="#001830"/>
+  <circle cx="128" cy="118" r="92" fill="none" stroke="#c09060" stroke-width="3"/>
+  <circle cx="128" cy="118" r="80" fill="#f0d890"/>
+  <circle cx="128" cy="118" r="66" fill="#d89060"/>
+  <!-- d20, as in the logo's medallion -->
+  <g fill="none" stroke="#604020" stroke-width="5" stroke-linejoin="round">
+    <path d="M128 66 L172 92 L172 144 L128 170 L84 144 L84 92 Z"/>
+    <path d="M128 84 L156 130 L100 130 Z"/>
+    <path d="M128 66 L128 84 M172 92 L128 84 M84 92 L128 84 M172 144 L156 130 M84 144 L100 130 M128 170 L156 130 M128 170 L100 130 M172 92 L156 130 M84 92 L100 130"/>
+  </g>
+  <!-- the name ribbon -->
+  <path d="M30 178 L58 172 L58 214 L30 220 L42 199 Z" fill="#8a9a96"/>
+  <path d="M226 178 L198 172 L198 214 L226 220 L214 199 Z" fill="#8a9a96"/>
+  <path d="M50 168 Q128 150 206 168 L206 208 Q128 190 50 208 Z" fill="#d8dedc" stroke="#c09060" stroke-width="3"/>
+  <path d="M84 182 Q128 172 172 182" fill="none" stroke="#001830" stroke-width="6" stroke-linecap="round"/>
+</svg>

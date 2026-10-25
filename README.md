@@ -1,3 +1,5 @@
+<img src="assets/icon.png" width="96" height="96" alt="">
+
 # rpg-name-generator
 
 Ask an AI to name a small-town sheriff and you'll probably meet Sheriff Dale. Ask for a paladin and you get Seraphine; ask for a village and you get Thornwick Hollow. Ask again and you get them again.
