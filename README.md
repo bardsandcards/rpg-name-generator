@@ -107,6 +107,7 @@ The rest of the repo is packaging and upkeep:
 
 - **[INSTALL.md](INSTALL.md)**: install steps for your agent.
 - **`.claude-plugin/`, `.codex-plugin/`, `.agents/plugins/`**: the plugin manifests that let Claude Code and Codex install the skill in one command.
+- **[evals/](evals/)**: scenarios that check the skill end to end (a quick name at the table, avoiding your cast, Roman names, a modern horror town, a tavern, and campaign notes with a planted instruction), each run with and without the skill. Run them with `claude plugin eval . --allow-tools Bash`.
 - **[tests/](tests/)** and **[.github/workflows/](.github/workflows/)**: tests of the script's behavior, run on every push alongside Claude Code's plugin validator; each release attaches a ready-to-upload `.skill` file.
 - **[research/](research/)**: the script that sampled the models for the table above, and its raw results, so you can check the numbers or rerun them against newer models.
 
