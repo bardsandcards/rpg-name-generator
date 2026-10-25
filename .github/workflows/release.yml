@@ -1,8 +1,11 @@
 name: Release
 
+# Releases are immutable, so the release is created with its assets in one step.
+# To release: git tag vX.Y.Z && git push origin vX.Y.Z
+
 on:
-  release:
-    types: [published]
+  push:
+    tags: ["v*"]
 
 permissions:
   contents: write
@@ -10,7 +13,7 @@ permissions:
   attestations: write
 
 jobs:
-  package:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -22,7 +25,7 @@ jobs:
       - uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
         with:
           subject-path: rpg-name-generator.skill
-      - run: gh release upload "$TAG" rpg-name-generator.skill rpg-name-generator.skill.sha256
+      - run: gh release create "$TAG" rpg-name-generator.skill rpg-name-generator.skill.sha256 --verify-tag --generate-notes
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.event.release.tag_name }}
+          TAG: ${{ github.ref_name }}
