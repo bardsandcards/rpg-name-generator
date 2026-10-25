@@ -5,7 +5,7 @@ description: Use whenever naming a character, NPC, place, ship, tavern, guild, c
 
 # RPG name generator
 
-Language models name things from habit. Ask for a fantasy character and you get Elara, Kael, Thorne or Seraphina; ask for a scientist and you get Dr. Elara Voss; ask for a small-town sheriff and you get Dale Pruitt. This skill gets raw candidates from real-world name data, checks them against the people and places the campaign already has, then reshapes the best of them by hand. The generator supplies ideas; the name you hand over is a modification, not a pick.
+Language models name things from habit. Ask for a paladin and you get Seraphine; a halfling, Pip; a small-town sheriff, Dale; a detective, Mara Voss; a village, Thornwick Hollow; a tavern, the Gilded Something. This skill gets raw candidates from real-world name data, checks them against the people and places the campaign already has, then reshapes the best of them by hand. The generator supplies ideas; the name you hand over is a modification, not a pick.
 
 There are two situations. Work out which one you're in first.
 
@@ -45,11 +45,13 @@ Decide the culture, era or feel first, then the source. `--blend` runs a charact
 | Post-apocalyptic | real names of the region before the fall; `--blend` for people born generations after it |
 | Any culture Faker doesn't cover in Latin script | find a real name list (web search, a reference book, the setting's own sources) and use `--seed-file` |
 
-**Historical names come from records, not Faker.** Faker's names are modern (`en_GB` gives "Tony Payne"). For a historical game, find a real period list and save it as a seed file: US Social Security baby-name data by year (1880 on) for Westerns and 1920s games; census and parish records for Victorian Britain; attested-name articles from the Medieval Names Archive or the Academy of Saint Gabriel for the Middle Ages; runestone and saga names for the Viking age. Respect how the culture built names: a Roman citizen has a praenomen from a short fixed list, a family nomen and often a cognomen (Gaius Valerius Crispus); Norse names are patronymics (Ketil Bjarnarson). People are named for the year they were *born*, not the year the game is set.
+**Historical names come from records, not Faker.** Faker's names are modern (`en_GB` gives "Tony Payne"). For a historical game, find a real period list and save it as a seed file: US census records (1850–1880) for Westerns; US Social Security baby-name data by year (1880 on) for anyone born after that, such as the adults of a 1920s game; census and parish records for Victorian Britain; attested-name articles from the Medieval Names Archive or the Academy of Saint Gabriel for the Middle Ages; runestone and saga names for the Viking age. Respect how the culture built names: a Roman citizen has a praenomen from a short fixed list, a family nomen and often a cognomen, and soldiers' tombstones are a good source for them; Norse names are patronymics (Ketil Bjarnarson). People are named for the year they were *born*, not the year the game is set.
 
 **Places**: `--part place` draws real town names from the locale, which work well blended (`--locales de_DE,cs_CZ --part place --blend`). Real towns come back for most continental European locales and `id_ID`, `vi_VN`, `zu_ZA`, `en_IN`; the English-language locales invent towns like "Mandyport", so for English-sounding places use a seed file of real villages.
 
-**Taverns, ships, guilds, companies and cults** don't come from the generator. Build them from something specific in the setting: a former owner, a local event, a trade, a joke only the regulars get (Halloran's, The Drowned Ox, the Tuesday Club). Avoid the stock words models stack together: Gilded, Rusty, Prancing, Silver, Iron, Obsidian, Crimson, Shadow, Whispering, Nexus, Aether, Nova and their kin.
+**Taverns, ships, guilds, companies and cults** don't come from the generator. Build them from something specific in the setting: a former owner, a local event, a trade, a joke only the regulars get (Mother Ketch's, The Drowned Ox, the Tuesday Club). Avoid the stock words models stack together: Gilded, Hollow, Rusty, Prancing, Wyvern, Silver, Iron, Ember, Obsidian, Crimson, Shadow, Lantern, Covenant, Choir, Meridian, Void, Vesper, Syndicate, Dynamics, Nexus, Aether, Nova and their kin.
+
+**Never borrow a name from existing fiction.** Models hand over Arkham, Silent Hill, Hawkins, Arasaka, Cyberdyne, Nostromo, MOTHER and Malcolm Reynolds as if they were new. If a name feels familiar, check whether it's someone else's.
 
 ## Run the generator
 

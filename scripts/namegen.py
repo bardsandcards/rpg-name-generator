@@ -27,15 +27,22 @@ names and its last word feeds surnames, so a list of full names works for --part
 import argparse, difflib, random, sys, unicodedata
 from collections import defaultdict
 
-# Names language models reach for again and again, first names and surnames alike.
-# Any word of a candidate matching one of these drops it.
+# Names language models reach for again and again, first names and surnames alike
+# (see research/). Any word of a candidate matching one of these drops it. Real names a
+# period genuinely used a lot (Gaius, Marcus, Eirik) stay out, so historical seed files work.
 CLICHES = {
     "elara", "lyra", "kael", "kaelen", "thorne", "seraphina", "aldric", "mira", "vex", "brennan",
     "garrick", "elowen", "aria", "aurora", "finn", "rowan", "sable", "caspian", "cedric", "theron",
     "zephyr", "nyx", "ash", "ember", "silas", "eldrin", "lirael", "kira", "talia", "darian", "jarek",
     "grimm", "grimble", "thistle", "bramble", "corvin", "alaric", "varis", "elric", "lysander",
     "aelar", "thalia", "liora", "kestrel", "wren", "ravenna", "draven", "valen", "selene",
-    "voss", "vance", "pruitt",
+    # fantasy
+    "seraphine", "valcourt", "valebright", "thalindra", "thalion", "sylvaris", "moonwhisper",
+    "pip", "underbough", "thistlewick", "thistlebrook", "thornwick", "bramwick", "malachar",
+    "veyra", "veyr", "harrowmere", "blacktithe", "grimjaw",
+    # sci-fi, cyberpunk, modern, horror
+    "cassian", "vesper", "venn", "mara", "voss", "vance", "dale", "pruitt", "hargrove", "marisol",
+    "calloway", "halloran", "kade", "blackwood", "whitcombe", "thaddeus", "cogsworth", "brasswick",
 }
 # Words that carry no sound of their own; ignored when comparing names.
 STOPWORDS = {"the", "and", "of", "sir", "lady", "lord", "dame", "von", "van", "der", "den", "del",
