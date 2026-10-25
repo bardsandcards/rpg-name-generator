@@ -10,7 +10,7 @@ Tell your agent:
 
 > Install the skill at https://github.com/bardsandcards/rpg-name-generator
 
-It reads [INSTALL.md](INSTALL.md) and handles the rest. For claude.ai or Claude Desktop, download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) and upload it under Settings → Capabilities → Skills.
+It reads [INSTALL.md](INSTALL.md) and handles the rest. For claude.ai or Claude Desktop, download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) (or ask any coding agent to build it from this repo) and upload it under Settings → Capabilities → Skills.
 
 ## Examples
 
@@ -50,7 +50,7 @@ The script's output is raw material. The skill has the agent reshape it before y
 
 ## How it works
 
-Language models have favorite names. We asked four models (Claude Haiku, Sonnet and Opus, and Codex) for one name at a time, 1,008 times, across 28 everyday RPG requests, each in a fresh session with no other context ([method and data](research/README.md)). The same few answers kept coming back:
+Language models have favorite names. We asked four models (Claude Haiku, Sonnet and Opus, and GPT Daybreak Blue through Codex) for one name at a time, 1,008 times, across 28 everyday RPG requests, each in a fresh session with no other context ([method and data](research/README.md)). The same few answers kept coming back:
 
 | Asked for | What came back, out of 36 |
 |---|---|
@@ -97,4 +97,4 @@ Taverns, ships, guilds and companies don't come from the script. The skill has t
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+[MIT No Attribution](LICENSE): use, copy, change and share it however you like, no credit required. © Bards & Cards LLC.
