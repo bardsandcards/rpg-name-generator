@@ -88,6 +88,8 @@ The skill tells the agent to work differently:
 4. **Generate candidates.** The script returns 15 or 20 real names from that source, or new names blended from it, dropping the clichés above and anything too close to your cast or to the rest of the batch.
 5. **Reshape.** The agent changes a syllable, shortens, or swaps an ending to fit the culture, then checks the finished name against your cast again.
 
+Does it work? In [six end-to-end evals](evals/README.md), each run with and without the skill, it took the quick name at the table from 0.00 to 1.00, the horror-town sheriff from 0.00 to 1.00 (without it: Dale, every time) and taverns from 0.17 to 1.00.
+
 Taverns, ships, guilds and companies don't come from the script. The skill has the agent name them after something specific in your setting (a former owner, a local event, a trade) instead of the stock words.
 
 ## What's included, and why

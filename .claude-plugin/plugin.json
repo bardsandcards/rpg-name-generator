@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "rpg-name-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Name RPG characters, places and factions in any genre without the names every AI reaches for, checked against your campaign's existing cast.",
   "icon": "./assets/icon.svg",
   "author": {
