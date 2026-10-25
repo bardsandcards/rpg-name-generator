@@ -1,6 +1,7 @@
 name: Release
 
-# Releases are immutable, so the release is created with its assets in one step.
+# Releases are immutable, so CI must pass first and the release is created with its
+# assets in one step.
 # To release: git tag vX.Y.Z && git push origin vX.Y.Z
 
 on:
@@ -8,13 +9,19 @@ on:
     tags: ["v*"]
 
 permissions:
-  contents: write
-  id-token: write
-  attestations: write
+  contents: read
 
 jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
   release:
+    needs: ci
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
