@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bardsandcards",
+  "description": "Tabletop RPG tools from Bards & Cards, a game shop in San Diego.",
+  "owner": {
+    "name": "Bards & Cards",
+    "url": "https://bardsandcards.com"
+  },
+  "plugins": [
+    {
+      "name": "rpg-name-generator",
+      "source": "./",
+      "description": "Name RPG characters, places and factions in any genre without the names every AI reaches for, checked against your campaign's existing cast.",
+      "category": "productivity"
+    }
+  ]
+}

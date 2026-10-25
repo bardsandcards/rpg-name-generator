@@ -35,17 +35,19 @@ Decide the culture, era or feel first, then the source. `--blend` runs a charact
 | Wuxia, East Asian fantasy | `--locales zh_CN` or `ja_JP` (Faker's romanized names); a seed file for Korean |
 | A people who already exist in the setting (its dwarves, elves, aliens) | `--seed-file` of the setting's existing names for them, with `--blend`, so new names sound like they belong |
 | Whimsical small folk (halflings, kender, gnomes) | `--compound` for surnames like Copperbottom, then replace the first name |
-| Historical, any era (Rome, Vikings, medieval, pirates) | `--seed-file` from a period source; see below |
-| Western, Weird West | `--seed-file` of 1840s–1880s US names, plus `--locales es_MX` for the borderlands |
-| Victorian, gothic horror, steampunk | `--seed-file` of 19th-century British names; steampunk can blend that with `de_DE` or `it_IT` |
-| 1920s cosmic horror (Call of Cthulhu) | `--seed-file` of US or UK names from 1870–1905, when 1920s adults were born |
+| Rome | `--seed-file seeds/roman-praenomina.txt`, `roman-nomina.txt`, `roman-cognomina.txt` (one run per part; see below) |
+| Viking age | `--seed-file seeds/old-norse-male.txt` or `old-norse-female.txt`; add patronymics by hand |
+| Other historical eras (medieval, pirates, ...) | `--seed-file` from a period source; see below |
+| Western, Weird West | `--seed-file seeds/us-1880s-male.txt` (or `-female`) for the young, older names from a census list for their parents, `seeds/us-surnames.txt` weighted by hand, and `--locales es_MX` for the borderlands |
+| Victorian, gothic horror, steampunk | `--seed-file seeds/england-1904-female.txt` (or `-male`), the earliest English list we have; steampunk can blend it with `de_DE` or `it_IT` |
+| 1920s cosmic horror (Call of Cthulhu) | `--seed-file seeds/us-1880s-*.txt` or `us-1890s-*.txt`, the decades 1920s adults were born in; `england-1904-*.txt` for Britain |
 | Modern horror, mystery, urban fantasy, superhero civilians | real names, no blend, from where the character grew up and the decade they were born |
 | Cyberpunk | real names, no blend, from the mix of places the city draws on (`pt_BR,id_ID,vi_VN,pl_PL,zu_ZA,ja_JP`...) |
 | Space opera, hard sci-fi | real names from several Earth cultures; light `--blend` across two locales for far-future drift |
 | Post-apocalyptic | real names of the region before the fall; `--blend` for people born generations after it |
 | Any culture Faker doesn't cover in Latin script | find a real name list (web search, a reference book, the setting's own sources) and use `--seed-file` |
 
-**Historical names come from records, not Faker.** Faker's names are modern (`en_GB` gives "Tony Payne"). For a historical game, find a real period list and save it as a seed file: US census records (1850–1880) for Westerns; US Social Security baby-name data by year (1880 on) for anyone born after that, such as the adults of a 1920s game; census and parish records for Victorian Britain; attested-name articles from the Medieval Names Archive or the Academy of Saint Gabriel for the Middle Ages; runestone and saga names for the Viking age. Respect how the culture built names: a Roman citizen has a praenomen from a short fixed list, a family nomen and often a cognomen, and soldiers' tombstones are a good source for them; Norse names are patronymics (Ketil Bjarnarson). People are named for the year they were *born*, not the year the game is set.
+**Historical names come from records, not Faker.** Faker's names are modern (`en_GB` gives "Tony Payne"). This skill's `seeds/` folder has real lists for the US by birth decade (1880s–1920s, from Social Security data), US surnames, England and Wales in 1904, Roman names and Old Norse names; `seeds/SOURCES.md` says where each comes from and what it's missing. For anything else, find a real period list and save it as a seed file: US census records (1850–1880) for Westerns; US Social Security baby-name data by year (1880 on) for anyone born after that, such as the adults of a 1920s game; census and parish records for Victorian Britain; attested-name articles from the Medieval Names Archive or the Academy of Saint Gabriel for the Middle Ages; runestone and saga names for the Viking age. Respect how the culture built names: a Roman citizen has a praenomen from a short fixed list, a family nomen and often a cognomen, and soldiers' tombstones are a good source for them; Norse names are patronymics (Ketil Bjarnarson). People are named for the year they were *born*, not the year the game is set.
 
 **Places**: `--part place` draws real town names from the locale, which work well blended (`--locales de_DE,cs_CZ --part place --blend`). Real towns come back for most continental European locales and `id_ID`, `vi_VN`, `zu_ZA`, `en_IN`; the English-language locales invent towns like "Mandyport", so for English-sounding places use a seed file of real villages.
 

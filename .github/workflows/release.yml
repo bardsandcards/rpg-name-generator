@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: git archive --format=zip --prefix=rpg-name-generator/ -o rpg-name-generator.skill HEAD SKILL.md LICENSE scripts
-      - run: gh release upload "${{ github.event.release.tag_name }}" rpg-name-generator.skill
+      - run: git archive --format=zip --prefix=rpg-name-generator/ -o rpg-name-generator.skill HEAD:skills/rpg-name-generator
+      - run: gh release upload "$TAG" rpg-name-generator.skill
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}

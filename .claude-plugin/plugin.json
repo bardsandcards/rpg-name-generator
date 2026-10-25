@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "rpg-name-generator",
+  "version": "0.1.0",
+  "description": "Name RPG characters, places and factions in any genre without the names every AI reaches for, checked against your campaign's existing cast.",
+  "author": {
+    "name": "Bards & Cards",
+    "url": "https://bardsandcards.com"
+  },
+  "homepage": "https://github.com/bardsandcards/rpg-name-generator",
+  "repository": "https://github.com/bardsandcards/rpg-name-generator",
+  "license": "MIT-0",
+  "keywords": [
+    "rpg",
+    "ttrpg",
+    "names",
+    "npc",
+    "worldbuilding",
+    "dnd"
+  ]
+}

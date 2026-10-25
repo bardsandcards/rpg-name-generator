@@ -10,7 +10,12 @@ Tell your agent:
 
 > Install the skill at https://github.com/bardsandcards/rpg-name-generator
 
-It reads [INSTALL.md](INSTALL.md) and handles the rest. For claude.ai or Claude Desktop, download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) (or ask any coding agent to build it from this repo) and upload it under Settings → Capabilities → Skills.
+It reads [INSTALL.md](INSTALL.md) and handles the rest. Or do it yourself:
+
+- **Claude Code:** `/plugin install rpg-name-generator --marketplace bardsandcards/rpg-name-generator`
+- **Codex:** `codex plugin marketplace add bardsandcards/rpg-name-generator`, then `codex plugin add rpg-name-generator@bardsandcards`
+- **Cursor, Gemini CLI, GitHub Copilot and other agents:** `npx skills add bardsandcards/rpg-name-generator`
+- **claude.ai or Claude Desktop:** download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) and upload it under Settings → Capabilities → Skills.
 
 ## Examples
 
@@ -20,7 +25,7 @@ It reads [INSTALL.md](INSTALL.md) and handles the rest. For claude.ai or Claude 
 
 **Any genre.** A Weird West gunslinger's name comes from what Americans were actually naming their children in the 1850s. A 1920s Call of Cthulhu professor gets a name from the decade they were born in, not the decade of the game. A cyberpunk fixer gets a real name from the mix of places the city draws on.
 
-**The script on its own.** The skill's helper script also works by hand:
+**The script on its own.** The skill's helper script also works by hand, from `skills/rpg-name-generator/`:
 
 ```
 $ uv run scripts/namegen.py --locales pt_BR,vi_VN,pl_PL,zu_ZA --part full --n 4
@@ -85,16 +90,26 @@ Taverns, ships, guilds and companies don't come from the script. The skill has t
 
 ## What's included, and why
 
-- **[SKILL.md](SKILL.md)**: the instructions your agent follows. This is the skill itself.
-- **[scripts/namegen.py](scripts/namegen.py)**: a single Python script with one dependency. Agents invent names from habit (see the table above); the script gives them a source to work from instead. It:
-  - draws real first names, surnames and town names from [Faker](https://faker.readthedocs.io/), a widely used library of locale data for dozens of countries, or from a name list you give it;
+Everything the skill needs lives in [skills/rpg-name-generator/](skills/rpg-name-generator/):
+
+- **[SKILL.md](skills/rpg-name-generator/SKILL.md)**: the instructions your agent follows. This is the skill itself.
+- **[scripts/namegen.py](skills/rpg-name-generator/scripts/namegen.py)**: a single Python script with one dependency. Agents invent names from habit (see the table above); the script gives them a source to work from instead. It:
+  - draws real first names, surnames and town names from [Faker](https://faker.readthedocs.io/), a widely used library of locale data for dozens of countries, or from a name list;
   - can blend those names into new ones with a small Markov chain, which strings letters together the way the source does, so invented names keep its sound;
   - filters out a list of names models overuse, and anything too similar to your cast or to the rest of the batch;
   - checks finished names against your cast with `--check`.
-- **Faker**: the only third-party library. It's here for its data (people's names and towns by locale), not its fake-data features. `uv run` installs it automatically; otherwise it's `pip install faker`. Lists you supply with `--seed-file` don't need it.
-- **[research/](research/)**: the script that sampled the models for the table above, and its raw results, so you can check the numbers or rerun them against newer models. Not needed to use the skill.
+- **Faker**: the only third-party library. It's here for its data (people's names and towns by locale), not its fake-data features. `uv run` installs it automatically; otherwise it's `pip install faker`. Name lists used with `--seed-file` don't need it.
+- **[seeds/](skills/rpg-name-generator/seeds/)**: real name lists for eras Faker doesn't cover: US first names by birth decade (1880s–1920s), US surnames, England and Wales in 1904, Roman names and Old Norse names. [SOURCES.md](skills/rpg-name-generator/seeds/SOURCES.md) says where each one comes from.
+
+The rest of the repo is packaging and upkeep:
+
 - **[INSTALL.md](INSTALL.md)**: install steps for your agent.
+- **`.claude-plugin/`, `.codex-plugin/`, `.agents/plugins/`**: the plugin manifests that let Claude Code and Codex install the skill in one command.
+- **[tests/](tests/)** and **[.github/workflows/](.github/workflows/)**: tests of the script's behavior, run on every push alongside Claude Code's plugin validator; each release attaches a ready-to-upload `.skill` file.
+- **[research/](research/)**: the script that sampled the models for the table above, and its raw results, so you can check the numbers or rerun them against newer models.
 
 ## License
 
-[MIT No Attribution](LICENSE): use, copy, change and share it however you like, no credit required. © Bards & Cards LLC.
+The code and instructions are [MIT No Attribution](LICENSE): use, copy, change and share them however you like, no credit required. © Bards & Cards LLC.
+
+The name lists in `seeds/` keep their sources' terms: US government data (public domain), ONS data (Open Government Licence v3.0) and lists drawn from Wikipedia and Wiktionary (CC BY-SA 4.0). [SOURCES.md](skills/rpg-name-generator/seeds/SOURCES.md) gives the attribution each one asks for.
