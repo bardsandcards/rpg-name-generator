@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.9"
-# dependencies = ["faker"]
+# dependencies = ["faker==40.40.0"]
 # ///
 """namegen.py: raw name candidates from real-world name data, to reshape by hand afterward.
 
@@ -14,7 +14,7 @@ Examples:
   add --avoid cast.txt to drop anything that sounds like a name already in the campaign
   namegen.py --avoid cast.txt --check "Ostra Vell" "Hollis"   # test names you reshaped by hand
 
-Needs: pip install faker   (not needed for --seed-file without --compound),
+Needs: pip install faker==40.40.0   (not needed for --seed-file without --compound),
        or run it with uv run scripts/namegen.py, which installs faker itself
 Locales: Latin-script Faker locales work directly (en_GB, de_DE, nl_NL, fr_FR, it_IT, es_ES,
 pt_PT, pl_PL, cs_CZ, sv_SE, no_NO, fi_FI, ...); ja_JP and zh_CN work through Faker's romanized
@@ -127,8 +127,11 @@ def markov(seeds, n, order=2):
     return list(out)
 
 def read_seeds(path, part):
-    with open(path) as fh:
-        lines = [l.split() for l in fh if l.strip()]
+    # Only words that look like names get through, so a file that isn't a name list
+    # (or has anything else in it) can't be echoed back.
+    with open(path, encoding="utf-8") as fh:
+        lines = [[w for w in l.split() if is_latin(w)] for l in fh]
+    lines = [l for l in lines if l]
     firsts = [l[0] for l in lines]
     lasts = [l[-1] for l in lines if len(l) > 1]
     pool = lasts if part == "last" and lasts else firsts
@@ -153,8 +156,8 @@ def main():
     locales = a.locales.split(",")
     avoid = []
     if a.avoid:
-        with open(a.avoid) as fh:
-            avoid = [w for l in fh for w in words(l)]
+        with open(a.avoid, encoding="utf-8") as fh:
+            avoid = [w for l in fh for w in words(l) if is_latin(w)]
     if a.check:
         for nm in a.check:
             hits = [w for w in words(nm) if w in CLICHES]

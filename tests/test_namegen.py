@@ -67,6 +67,14 @@ class Filters(unittest.TestCase):
         names, _ = run("--seed-file", seeds, "--avoid", cast, "--n", "6")
         self.assertEqual(sorted(names), ["Brandt", "Hollis", "Odile"])
 
+    def test_lines_that_are_not_names_never_reach_the_output(self):
+        seeds = tmpfile("Hollis Brandt\nexport API_KEY=sk-live-4f9a2c\nOdile Marchetti\npassword: hunter2\n")
+        for part in ("first", "last", "full"):
+            names, _ = run("--seed-file", seeds, "--part", part, "--n", "10")
+            out = " ".join(names)
+            for secret in ("API_KEY", "sk-live", "4f9a2c", "hunter2"):
+                self.assertNotIn(secret, out, part)
+
     def test_a_batch_never_repeats_a_first_sound(self):
         seeds = tmpfile("Hollis\nHolland\nHolger\nBrandt\nBranwen\nOdile\nPetra\n")
         for _ in range(20):

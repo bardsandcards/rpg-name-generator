@@ -14,7 +14,7 @@ It reads [INSTALL.md](INSTALL.md) and handles the rest. Or do it yourself:
 
 - **Claude Code:** `/plugin install rpg-name-generator --marketplace bardsandcards/rpg-name-generator`
 - **Codex:** `codex plugin marketplace add bardsandcards/rpg-name-generator`, then `codex plugin add rpg-name-generator@bardsandcards`
-- **Cursor, Gemini CLI, GitHub Copilot and other agents:** `npx skills add bardsandcards/rpg-name-generator`
+- **Cursor, Gemini CLI, GitHub Copilot and other agents:** `npx skills@1.7.2 add bardsandcards/rpg-name-generator`
 - **claude.ai or Claude Desktop:** download `rpg-name-generator.skill` from the [latest release](https://github.com/bardsandcards/rpg-name-generator/releases/latest) and upload it under Settings → Capabilities → Skills.
 
 ## Examples
@@ -98,7 +98,7 @@ Everything the skill needs lives in [skills/rpg-name-generator/](skills/rpg-name
   - can blend those names into new ones with a small Markov chain, which strings letters together the way the source does, so invented names keep its sound;
   - filters out a list of names models overuse, and anything too similar to your cast or to the rest of the batch;
   - checks finished names against your cast with `--check`.
-- **Faker**: the only third-party library. It's here for its data (people's names and towns by locale), not its fake-data features. `uv run` installs it automatically; otherwise it's `pip install faker`. Name lists used with `--seed-file` don't need it.
+- **Faker**: the only third-party library. It's here for its data (people's names and towns by locale), not its fake-data features. `uv run` installs it automatically; otherwise it's `pip install faker==40.40.0`. Name lists used with `--seed-file` don't need it.
 - **[seeds/](skills/rpg-name-generator/seeds/)**: real name lists for eras Faker doesn't cover: US first names by birth decade (1880s–1920s), US surnames, England and Wales in 1904, Roman names and Old Norse names. [SOURCES.md](skills/rpg-name-generator/seeds/SOURCES.md) says where each one comes from.
 
 The rest of the repo is packaging and upkeep:

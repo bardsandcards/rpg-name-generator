@@ -24,7 +24,8 @@
     "developerName": "Bards & Cards",
     "category": "Productivity",
     "capabilities": [
-      "Read"
+      "Read",
+      "Write"
     ],
     "websiteURL": "https://github.com/bardsandcards/rpg-name-generator",
     "defaultPrompt": [
