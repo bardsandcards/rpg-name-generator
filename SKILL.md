@@ -1,9 +1,9 @@
 ---
-name: name-generator
+name: rpg-name-generator
 description: Use whenever naming a character, NPC, place, ship, tavern, guild, company or faction for a tabletop RPG or story, in any genre (fantasy, sci-fi, cyberpunk, horror, steampunk, historical, western, post-apocalyptic, modern). Covers the quick name a GM needs mid-session and the batch of names an adventure needs, generating candidates from real-world name data and checking them against the campaign's existing cast instead of inventing names from habit.
 ---
 
-# Name generator
+# RPG name generator
 
 Language models name things from habit. Ask for a fantasy character and you get Elara, Kael, Thorne or Seraphina; ask for a scientist and you get Dr. Elara Voss; ask for a small-town sheriff and you get Dale Pruitt. This skill gets raw candidates from real-world name data, checks them against the people and places the campaign already has, then reshapes the best of them by hand. The generator supplies ideas; the name you hand over is a modification, not a pick.
 
