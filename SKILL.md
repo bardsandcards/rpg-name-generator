@@ -24,7 +24,7 @@ If you don't know the campaign, skip this and say so in one line if it matters (
 
 ## Where the sound comes from
 
-Decide the culture, era or feel first, then the source. `--blend` runs a character-level Markov chain over the source, so you get new names that keep its sound; without it you get real names. A seed file needs at least 15–20 names; fewer gives thin, repetitive output.
+Decide the culture, era or feel first, then the source. `--blend` runs a character-level Markov chain over the source, so you get new names that keep its sound; without it you get real names. A seed file needs at least 15–20 names, and closer to 50 for a batch of 20 distinct names; fewer gives thin, repetitive output. Cultures with short, similar-sounding names (romanized Chinese, Vietnamese) give fewer distinct names per run; take what survives or run again.
 
 | Genre or feel | Source |
 |---|---|

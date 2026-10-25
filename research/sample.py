@@ -55,7 +55,7 @@ def claude(model, prompt):
 def codex(model, prompt):
     with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as fh:
         out = fh.name
-    subprocess.run(["codex", "exec", "--ephemeral", "--skip-git-repo-check", "-s", "read-only",
+    subprocess.run(["codex", "exec", "--ephemeral", "--skip-git-repo-check", "-s", "read-only", "-m", model,
                     "-c", 'model_reasoning_effort="low"', "-o", out,
                     prompt + SUFFIX + " Do not run any commands."],
                    capture_output=True, text=True, timeout=300, stdin=subprocess.DEVNULL)

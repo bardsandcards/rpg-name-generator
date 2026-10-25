@@ -5,7 +5,7 @@ On 2026-10-24 we asked four models for one name at a time across 28 everyday tab
 ## Method
 
 - **Models:** Claude Haiku, Sonnet and Opus through the Claude Code CLI (10 draws each per request), and the Codex CLI's default model (6 draws each).
-- **Calls:** every draw is a fresh session with a plain system prompt ("You are a helpful assistant."), no tools and no project context. One name per call, because a model asked for a list avoids repeating itself within that list.
+- **Calls:** every draw is a fresh session. Claude ran with a plain system prompt ("You are a helpful assistant."), no tools, no settings and no CLAUDE.md files; Codex ran on its own CLI config with reasoning effort set to low. One name per call, because a model asked for a list avoids repeating itself within that list.
 - **Prompts:** the 28 requests in [sample.py](sample.py), such as "Name the sheriff of a small town in a modern horror RPG.", each followed by "Reply with only the name, nothing else."
 - **Tally:** [analyze.py](analyze.py), which strips titles like "Sheriff" and "Dr." before counting. Raw answers are in [samples.jsonl](samples.jsonl).
 

@@ -57,7 +57,7 @@ Language models have favorite names. We asked four models (Claude Haiku, Sonnet 
 | A small-town sheriff | **Dale**, 24 times (Dale Hargrove, Dale Harrow…), including every Sonnet and Opus draw |
 | A homicide detective | **Mara**, 16 times; **Voss** or **Vance**, 21 (Mara Voss ×8, Marisol Vance ×7) |
 | A paladin heroine | **Seraphine**, 34 times (Seraphine Valcourt ×14) |
-| A halfling rogue | **Pip** or **Pippin**, 33 times |
+| A halfling rogue | a name starting with **Pip**, 33 times (Pip Thistlewick ×10, Pip Underbough ×10) |
 | A steampunk inventor | **Thaddeus** or **Cornelius**, 26 times (Thaddeus Cogsworth ×8) |
 | A Weird West gunslinger | **Silas**, 21 times |
 | A Victorian widow | **Blackwood**, 17 times |
